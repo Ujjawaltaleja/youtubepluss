@@ -1,0 +1,89 @@
+span.title{
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-height: 1.8em;
+    line-height: 1.8em;
+    text-overflow: ellipsis;
+}
+.col-md-4 , .col-md-8{
+    padding:20px ;
+    
+}
+.row{
+    max-width:100%;
+}
+.list-group{
+    position: static;
+    text-align: left !important;
+    width: 95%;
+    padding: 0px !important;
+    margin: 0px !important;
+    border: 0px;
+    height: 800px;
+    overflow:auto; 
+    z-index: 10;
+    margin-top:0px;
+    margin-left: 0 !important;
+    border-width: 0px;
+}
+
+.list-group-fvid{
+    position: static;
+    text-align: left !important;
+    width: 95%;
+    padding: 0px !important;
+  
+    
+    overflow:auto; 
+    z-index: 10;
+    margin-top:0px;
+    margin-left: 0 !important;
+    border-width: 0px;
+}
+hr{
+    width: 95%;
+}
+span.red{
+    font-size: 16px;
+    color: #DC0034;
+    
+}
+.bg{
+    background-color:#f7f7f7;
+padding: 1% ;
+}
+
+
+.item-buttons{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+.item-buttons button {
+    background-color: #000000;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 20%;
+    text-align: center;
+    border: none;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    display: none;
+}
+
+.item-buttons button:hover {
+    color: black;
+    background-color: white;
+}
+
+.tile:hover  .item-buttons button{
+    display: inline-block;
+}

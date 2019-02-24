@@ -1,0 +1,78 @@
+.resCarousel {margin-bottom: 20px;}
+.resCarousel-inner{display: flex; flex-wrap: wrap;}
+.item{
+    background: #fff;
+    margin: 5px;
+    box-shadow: 4px 4px 3px #f1f1f1;
+}
+
+.tile {
+    padding: 6px;
+    position: relative;
+}
+
+.tile-img img {
+    padding: 0;
+    width: 200px;
+}
+
+.categoryName{
+    color: #797979;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    margin: 5px;
+}
+
+.tile-info .title{
+    font-size: 16px;
+    color: #DC0034;
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-width: 200px;
+  max-height: 3.6em;
+  line-height: 1.8em;
+  text-overflow: ellipsis; 
+}
+
+.tile-info .author{
+    font-size: 12px;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.item-buttons{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+.item-buttons button {
+    background-color: #000000;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 20%;
+    text-align: center;
+    border: none;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    display: none;
+}
+
+.item-buttons button:hover {
+    color: black;
+    background-color: white;
+}
+
+.tile:hover  .item-buttons button{
+    display: inline-block;
+}

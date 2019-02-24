@@ -1,0 +1,180 @@
+.App {
+  text-align: left;
+  background:#f7f7f7;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+ 
+ 
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.search-bar{
+  width: 100%;
+  padding-bottom:0px;
+  margin-bottom: 0%;
+  position: relative;
+  height: 34px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left:0%;
+}
+
+
+/* rohit */
+
+.navbar {
+  background-color: #fff;
+ 
+}
+
+.navbar-default {
+box-shadow: 0px 5px 15px #E8E8E8;
+border: none;
+}
+
+.navbar-brand {
+margin-left: 35px !important;
+}
+
+.navbar-brand span {
+font-size: 30px;
+font-weight: 600;
+color: #DC0034;
+margin-top: 4px;
+display: inline-block;
+margin-right: 5px;
+
+}
+
+.navbar-brand > img {
+display: inline-block;
+width: 30px;
+height: 30px;
+margin-top: -12px;
+}
+
+.nav>li>a {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.navbar-toggle {
+padding: 10px;
+margin: 25px 15px 25px 0;
+}
+
+
+/* searchbar */
+
+.navbar-form input {
+background-color: #EBEEF1;
+padding: 20px;
+border: 1px solid #fff;
+font-family: 'Roboto', 'Noto', sans-serif;
+font-size: 16px;
+font-weight: 400;
+border-radius: 5px;
+}
+
+.navbar-form input.form-control:focus {
+background-color: #EBEEF1;
+padding: 20px;
+border: 1px solid;
+border-color: #fff #EBEEF1 #fff #fff;
+outline: 0;
+box-shadow: none;
+}
+
+.navbar-form>div.input-group {
+width: 100%;
+}
+
+.navbar-form .btn-default {
+background-color: #EBEEF1;
+padding: 10px;
+border: 1px solid;
+border-color: #fff #fff #fff #EBEEF1;
+margin-left: -2px !important;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+
+.navbar>.container-fluid{
+  align-items: left !important ;
+}
+
+
+.form{
+  width:50%;
+  margin-left: 2%;
+  padding: 7px;;
+}
+.d-flex{
+  width: 100%;
+}
+
+
+
+/* side bar */
+
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 75px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+ 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}

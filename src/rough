@@ -1,0 +1,64 @@
+import React, { Component } from "react";
+
+import "./App.css";
+import * as Youtube from "./youtube";
+import { DebounceInput } from "react-debounce-input";
+import SearchVideos from "./searchVideos";
+import PopularSong from "./popularSong";
+
+class App extends Component {
+  state = {
+    svid: []
+  };
+  showVideos = query => {
+    if (query)
+      Youtube.searchVideosByQuery(query).then(res => {
+        this.setState({ svid: res.items });
+      });
+      else{
+        this.setState({ svid: query });
+      }
+    console.log(this.state.svid);
+  };
+  render() {
+   
+    return (
+      <div className="App">
+        
+
+
+<nav className="navbar navbar-default">
+    <div className="container-fluid">
+      <div className="navbar-header">
+        <a className="navbar-brand" href="#">
+          <span>YouTube</span>
+          <img src="youtubeplus\src\plus.png" alt="+"/>
+        </a>
+     
+      
+          <DebounceInput
+            type="text" 
+            className="search-bar"
+            placeholder="Search"
+            debounceTimeout={1000}
+            onChange={event => this.showVideos(event.target.value)}
+          />
+          <SearchVideos svid={this.state.svid} />
+          
+          </div>
+          
+          </div>
+      </nav>
+      
+        
+        
+        <div className="container">
+        <PopularSong  catname={"Trending Videos"} id={17}/>
+        <PopularSong catname={"Sports"} id={10}/>
+        <PopularSong catname={"Music"} id={24}/>
+        </div>
+      </div>
+    );
+  }
+}
+export default App;
